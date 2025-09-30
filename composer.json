@@ -1,0 +1,24 @@
+{
+    "name": "ibrahimsmuhammad/basicsengage-laravel-mailer",
+    "description": "Laravel 9+ custom mail transport for BasicsEngage API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ibrahim\\BasicsEngageMail\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/mail": "^9.0|^10.0|^11.0|^12.0",
+        "symfony/mailer": "^6.0|^7.0",
+        "symfony/http-client": "^6.0|^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ibrahim\\BasicsEngageMail\\BasicsEngageMailServiceProvider"
+            ]
+        }
+    }
+}
